@@ -45,8 +45,8 @@ Simply hit **CTRL+C** to interrupt the receiver.
 
 | Script | Printer Family (Tested Product) |
 |----------|----------|
-| `hp_send`/`hp_recv`  | HP LaserJet Pro (HP LaserJet Pro M148dw) |
-| `hp_M_send`/`hp_M_recv`  | HP LaserJet (HP LaserJet M15w) |
+| `hp_send`, `hp_recv`  | HP LaserJet Pro (HP LaserJet Pro M148dw) |
+| `hp_M_send`, `hp_M_recv`  | HP LaserJet (HP LaserJet M15w) |
 | `brother_send`, `brother_recv`  | Brother HL series (HL-L2375DW) |
 | `block_send`, `block_recv`  | BLOCK SB 100, probably also BLOCK SB 50 and 200 (BLOCK SB 100) |
 
