@@ -22,7 +22,7 @@ The code was tested under Linux (Debian and Ubuntu). The following packages are 
 
 In that case, the string "`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`" is the requested URL that equals the secret message. In order to represent data in an URL compatible format, we utilize `urlencode`.
 
-**2. Spotify-related Errors:** The following messages appear on port 514 from time to time and overwrite our secret messages. These messages relate to the *Spotify* service. 
+**2. Spotify-related Spurious Log Messages:** The following messages appear on port 514 from time to time and overwrite our secret messages. These messages relate to the *Spotify* service and limit the storage doration of the secret data.
 
 ```
 (Thread2): [ 506731.853883] SPOTIFY (2): spotifyTspTaskEntry(): cmd:4 error:0
