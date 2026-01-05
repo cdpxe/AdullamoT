@@ -17,18 +17,17 @@ PRINTER_IP="192.168.0.1"
 
 Now, one can easily send data as follows, where *SECRETMESSAGE* represents the secret message. The following example uses the *HP DeskJet Pro*:
 
-``
+```
 ./hp_send.sh SECRETMESSAGE
 Sending chunks of the secret msg ...
 sending EOF: done.
-``
+```
 
 Receiving the message works as follows:
 
-``
+```
 ./hp_recv.sh
-...
-``
+```
 
 ## Overview of Supported IoT Devices
 
