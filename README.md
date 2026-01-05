@@ -8,6 +8,32 @@ The code was tested under Linux (Debian and Ubuntu). The following packages are 
 
 ## How-to
 
+In general, one uses the `xxx_send.sh` script to send data to an IoT device, and the `xxx_recv.sh` script to retrieve the data.
+However, before using these scripts, one needs to configure the IP address of the IoT device using the following variable that can be found in every script. For convenience, the smart speaker's IP is referred to with the same variable. Make sure to adjust both, the sender and the receiver script for a tool.
+
+``
+PRINTER_IP="192.168.0.1"
+``
+
+Now, one can easily send data as follows, where *SECRETMESSAGE* represents the secret message. The following example uses the *HP DeskJet Pro*:
+
+``
+./hp_send.sh SECRETMESSAGE
+Sending chunks of the secret msg ...
+sending EOF: done.
+``
+
+Receiving the message works as follows:
+
+``
+./hp_recv.sh
+...
+``
+
+## Overview of Supported IoT Devices
+
+...
+
 
 ## Notes
 
@@ -22,8 +48,8 @@ The code was tested under Linux (Debian and Ubuntu). The following packages are 
 
 In that case, the string "`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`" is the requested URL that equals the secret message. In order to represent data in an URL compatible format, we utilize `urlencode`.
 
-**2. Spotify-related Errors:** The following messages appear on port 514 from time to time and overwrite our secret messages. These messages relate to the *Spotify* service. 
+**2. Spotify-related Spurious Log Messages:** The following messages appear on port 514 from time to time and overwrite our secret messages. These messages relate to the *Spotify* service and limit the storage doration of the secret data.
 
 ```
-TODO
+(Thread2): [ 506731.853883] SPOTIFY (2): spotifyTspTaskEntry(): cmd:4 error:0
 ```
