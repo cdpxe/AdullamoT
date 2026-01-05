@@ -25,5 +25,5 @@ In that case, the string "`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`" 
 **2. Spotify-related Errors:** The following messages appear on port 514 from time to time and overwrite our secret messages. These messages relate to the *Spotify* service. 
 
 ```
-TODO
+(Thread2): [ 506731.853883] SPOTIFY (2): spotifyTspTaskEntry(): cmd:4 error:0
 ```
