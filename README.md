@@ -43,7 +43,7 @@ Simply hit **CTRL+C** to interrupt the receiver.
 
 ## Overview of Supported IoT Devices
 
-| Script | Printer Family (Tested Product) |
+| Script | Product Series (Tested Product) |
 |----------|----------|
 | `hp_send`, `hp_recv`  | HP LaserJet Pro (HP LaserJet Pro M148dw) |
 | `hp_M_send`, `hp_M_recv`  | HP LaserJet (HP LaserJet M15w) |
