@@ -54,7 +54,7 @@ Simply hit **CTRL+C** to interrupt the receiver.
 
 #### BLOCK SB 100
 
-**1. Information on the Appearance of Secret Messages:** The caused 404 error messages caused by `GET` requests of the covert sender result in the following messages on port 514 on the BLOCK device:
+**1. Information on the Appearance of Secret Messages:** The error messages caused by `GET` requests of the covert sender (which needs to request such inexistent web pages to trigger the appearance of the error) result in the following messages on port 514 on the BLOCK device:
 
 ```
 %(Thread2): [ 151855.884631] FSFS   (2): fsfsFlashFileHandleOpen: File 'flash://AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' not fou
