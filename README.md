@@ -15,19 +15,31 @@ However, before using these scripts, one needs to configure the IP address of th
 PRINTER_IP="192.168.0.1"
 ``
 
-Now, one can easily send data as follows, where *SECRETMESSAGE* represents the secret message. The following example uses the *HP DeskJet Pro*:
+Now, one can easily send data as follows, where *SECRETMESSAGE* represents the secret message. The following example uses the *HP DeskJet Pro*. First, we need to start the receiver:
+
+```
+./hp_recv.sh 
+###########
+```
+Each `#` represents a pull for new information from the IoT device.
+
+Now, since the receiver is waiting for data, we can run the sender script:
 
 ```
 ./hp_send.sh SECRETMESSAGE
 Sending chunks of the secret msg ...
-sending EOF: done.
+#K#sending EOF: done.
 ```
 
-Receiving the message works as follows:
+This first sends *SECRETMESSAGE*, followed by *EOF*.
+
+The receiver should output the received data:
 
 ```
-./hp_recv.sh
+############# MSG=SECRETMESSAGE
 ```
+
+Simply hit **CTRL+C** to interrupt the receiver.
 
 ## Overview of Supported IoT Devices
 
