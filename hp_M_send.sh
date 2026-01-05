@@ -1,5 +1,5 @@
 #!/bin/bash
-#HP HP LaserJet M15w
+#HP LaserJet M15w
 PRINTER_IP="192.168.178.137"
 
 if [ "$1" != "" ]; then
