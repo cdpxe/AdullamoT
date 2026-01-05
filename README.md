@@ -8,6 +8,32 @@ The code was tested under Linux (Debian and Ubuntu). The following packages are 
 
 ## How-to
 
+In general, one uses the `xxx_send.sh` script to send data to an IoT device, and the `xxx_recv.sh` script to retrieve the data.
+However, before using these scripts, one needs to configure the IP address of the IoT device using the following variable that can be found in every script. For convenience, the smart speaker's IP is referred to with the same variable. Make sure to adjust both, the sender and the receiver script for a tool.
+
+``
+PRINTER_IP="192.168.0.1"
+``
+
+Now, one can easily send data as follows, where *SECRETMESSAGE* represents the secret message. The following example uses the *HP DeskJet Pro*:
+
+``
+./hp_send.sh SECRETMESSAGE
+Sending chunks of the secret msg ...
+sending EOF: done.
+``
+
+Receiving the message works as follows:
+
+``
+./hp_recv.sh
+...
+``
+
+## Overview of Supported IoT Devices
+
+...
+
 
 ## Notes
 
