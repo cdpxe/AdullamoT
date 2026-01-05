@@ -15,7 +15,7 @@ However, before using these scripts, one needs to configure the IP address of th
 PRINTER_IP="192.168.0.1"
 ``
 
-Now, one can easily send data as follows, where *SECRETMESSAGE* represents the secret message. The following example uses the *HP DeskJet Pro*. First, we need to start the receiver:
+Now, one can easily send data as follows, where *SECRETMESSAGE* represents the secret message. The following example uses the *HP LaserJet Pro*. First, we need to start the receiver:
 
 ```
 ./hp_recv.sh 
@@ -31,9 +31,9 @@ Sending chunks of the secret msg ...
 #K#sending EOF: done.
 ```
 
-This first sends *SECRETMESSAGE*, followed by *EOF*.
+This first sends *SECRETMESSAGE*, followed by *EOF*. Again, each `#` represents a pull for receiver feedback information, while a `K` represents a received acknowledgement message from the receiver, i.e., the information that the next chunk of data can be sent (if the message is long enough).
 
-The receiver should output the received data:
+Meanwhile receiver should output the received data:
 
 ```
 ############# MSG=SECRETMESSAGE
@@ -43,8 +43,12 @@ Simply hit **CTRL+C** to interrupt the receiver.
 
 ## Overview of Supported IoT Devices
 
-...
-
+| Script | Printer Family (Tested Product) |
+|----------|----------|
+| `hp_send`/`hp_recvh  | HP LaserJet Pro (HP LaserJet Pro M148dw) |
+| `hp_M_send`/`hp_M_recvh  | HP LaserJet (HP LaserJet M15w) |
+| `brother_send`, `brother_recv`  | Brother HL series (HL-L2375DW) |
+| `block_send`, `block_recv`  | BLOCK SB 100, probably also BLOCK SB 50 and 200 (BLOCK SB 100) |
 
 ## Notes
 
