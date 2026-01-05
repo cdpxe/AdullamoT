@@ -12,7 +12,7 @@ while [ 1 ]; do
 		echo -n "#"
 	done
 	if [ "$RECV_MSG" == "EOF" ]; then
-		echo "Recv'd EOF. Exiting"; exit 0
+		echo "Recv'd EOF."
 	fi
 	#echo " received secret message. Setting printer location to 'OK' to indicate the successful transmission."
 	echo " MSG=$RECV_MSG"
