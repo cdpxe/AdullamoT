@@ -67,4 +67,6 @@ In that case, the string "`AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA`" 
 
 ```
 (Thread2): [ 506731.853883] SPOTIFY (2): spotifyTspTaskEntry(): cmd:4 error:0
+(Thread2): [ 582271.514119] SPOTIFY (2): spotifyTspTaskEntry(): cmd:-1335047288 error:0
 ```
+(The latter message appears in fewer cases than the former one.)
