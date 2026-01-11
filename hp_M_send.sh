@@ -11,7 +11,7 @@ fi
 source hp_M_shared.sh
 
 # 1. transfer string into url format
-#INPUT_SECRET_MSG=`urlencode $INPUT_SECRET_MSG` ##FIXME
+#INPUT_SECRET_MSG=`urlencode $INPUT_SECRET_MSG`
 #echo "INPUT_SECRET_MSG=$INPUT_SECRET_MSG"
 #read go
 # 2. split into chunks of the max. possible string length (64 characters)
@@ -36,7 +36,7 @@ for SECRET_MSG in `echo $INPUT_SECRET_MSG | fold -w64`; do
 	post_message $PRINTER_IP "unused" $SECRET_MSG
 	echo -n "#"
 done
-#echo -n "sending EOF: "
-#post_message $PRINTER_IP "unused" "EOF"
+echo -n "sending EOF: "
+post_message $PRINTER_IP "unused" "EOF"
 echo "done."
 

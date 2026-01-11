@@ -12,7 +12,7 @@ while [ 1 ]; do
 		echo -n "#"
 	done
 	if [ "$RECV_MSG" == "EOF" ]; then
-		echo "Recv'd EOF. Existing"
+		echo "Recv'd EOF."
 	fi
 	#echo " received secret message. Setting printer location to "$ACK_MESSAGE" to indicate the successful transmission."
 	echo " MSG=$RECV_MSG"
@@ -20,3 +20,4 @@ while [ 1 ]; do
 	# parameters: printer-ip  post_data_len  csrf  secret_msg
 	post_message $PRINTER_IP "unused" "$ACK_MESSAGE"
 done
+

@@ -37,3 +37,4 @@ invalidEntryStr=Eingabe+ist+ung%C3%BCltig.&AirPrint_enabled=true&BonjourEnabled=
 
 ' | openssl s_client -connect ${1}:443 > /dev/null 2>&1
 }
+
