@@ -5,7 +5,6 @@ This repository features the AdullamoT proof of concept code.
 ## TODO
 
 - Examples for all devices
-- configurable ACK message, TODO: add to docs and run checks
 
 ## Requirements
 
@@ -56,6 +55,14 @@ Simply hit **CTRL+C** to interrupt the receiver.
 | `block_send`, `block_recv`  | BLOCK SB 100, probably also BLOCK SB 50 and 200 (BLOCK SB 100) |
 
 ## Notes
+
+#### Fine-tuning Acknowledgement Messages
+
+As discussed in the paper, resetting *location* settings back to the original values after a message has been received aids covertness. For this reason, one can simply modify a variable in the code that uses the original location string as an *acknowledgement* message. The variable can be found in the `..._shared.sh` files of the printers:
+
+```
+ACK_MESSAGE="OK" # replace the "OK" with the string of your choice.
+```
 
 #### BLOCK SB 100
 
