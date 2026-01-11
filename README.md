@@ -2,10 +2,6 @@
 
 This repository features the AdullamoT proof of concept code.
 
-## TODO
-
-- Examples for all devices
-
 ## Requirements
 
 The code was tested under Linux (Debian and Ubuntu). The following packages are necessary to run the different scripts: `urlencode` (part of the `gridsite-clients` package), `curl`, plus standard tools (`openssl`, `bash`, `sed`, `awk` etc.).
@@ -56,7 +52,7 @@ Simply hit **CTRL+C** to interrupt the receiver.
 
 ## Notes
 
-#### Fine-tuning Acknowledgement Messages
+#### Fine-tuning Acknowledgement Messages for Printers
 
 As discussed in the paper, resetting *location* settings back to the original values after a message has been received aids covertness. For this reason, one can simply modify a variable in the code that uses the original location string as an *acknowledgement* message. The variable can be found in the `..._shared.sh` files of the printers:
 
