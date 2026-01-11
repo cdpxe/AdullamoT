@@ -2,6 +2,8 @@
 # HP LaserJet M15w
 # Code for shared functions (used by both, CS and CR).
 
+ACK_MESSAGE="OK" # replace this with the original location string
+
 # parameters: printer-ip  csrf  secret_msg
 #			  ^^^^=unused
 function post_message()

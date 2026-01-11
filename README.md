@@ -5,7 +5,7 @@ This repository features the AdullamoT proof of concept code.
 ## TODO
 
 - Examples for all devices
-- configurable ACK message
+- configurable ACK message, TODO: add to docs and run checks
 
 ## Requirements
 

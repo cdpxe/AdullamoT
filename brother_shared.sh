@@ -2,6 +2,8 @@
 # Brother HL-L2375DW series
 # Code for shared functions (used by both, CS and CR).
 
+ACK_MESSAGE="OK" # replace this with the original location string
+
 # retrieve a current CSRF token
 # this function also replaces tmp_$$, which does contain the recv'd message!
 function get_csrf_token()
