@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the repository and the associated paper."
+title: "AdullamoT"
+repository-code: "https://github.com/cdpxe/AdullamoT"
+license: "BSD"
+authors:
+  - family-names: "Wendzel"
+    given-names: "Steffen"
+    orcid: "https://orcid.org/0000-0002-1913-5912"
+preferred-citation:
+  type: conference-paper
+  title: "AdullamoT: Using IoT Devices as Relays for Time-decoupled Secret Exchange & Censorship Circumvention "
+  authors:
+    - family-names: "Wendzel"
+      given-names: "Steffen"
+      orcid: "https://orcid.org/0000-0002-1913-5912"
+  year: 2026
+  publisher: "ACM"
+  conference: "Proc. 14th ACM Workshop on Information Hiding and Multimedia Security (IH&MMSec 2026)"
+  location: "Florence, Italy"
