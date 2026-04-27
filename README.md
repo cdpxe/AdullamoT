@@ -1,15 +1,17 @@
 # AdullamoT
 
-This repository features the AdullamoT proof of concept code.
+This repository features the AdullamoT proof of concept code. It belongs to the following paper:
 
-## Requirements
+(anonymized)
 
-The code was tested under Linux (Debian and Ubuntu). The following packages are necessary to run the different scripts: `urlencode` (part of the `gridsite-clients` package), `curl`,  `nc` plus standard tools (`openssl`, `bash`, `sed`, `awk` etc.).
+## Dependencies
+
+The code was tested under Linux (Debian and Ubuntu). The following packages are necessary to run the scripts: `urlencode` (part of the `gridsite-clients` package), `curl`,  `nc` plus standard tools (`openssl`, `bash`, `sed`, `awk` etc.).
 
 ## How-to
 
-In general, one uses the `xxx_send.sh` script to send data to an IoT device, and the `xxx_recv.sh` script to retrieve the data.
-However, before using these scripts, one needs to configure the IP address of the IoT device using the following variable that can be found in every script. For convenience, the smart speaker's IP is referred to with the same variable. Make sure to adjust both, the sender and the receiver script for a tool.
+In general, one uses the `xxx_send.sh` script to send secret data to an IoT device, and the `xxx_recv.sh` script to retrieve the data.
+Before using these scripts, one needs to configure the IP address of the IoT device using the `PRINTER_IP` variable that can be found at the beginning of every script. For convenience, the smart speaker's IP is referred to with the same variable as the IPs of the printers. Make sure to adjust the `PRINTER_IP` of both, the sender script and the receiver script.
 
 ``
 PRINTER_IP="192.168.0.1"
@@ -33,7 +35,7 @@ Sending chunks of the secret msg ...
 
 This first sends *SECRETMESSAGE*, followed by *EOF*. Again, each `#` represents a pull for receiver feedback information, while a `K` represents a received acknowledgement message from the receiver, i.e., the information that the next chunk of data can be sent (if the message is long enough).
 
-Meanwhile receiver should output the received data:
+Meanwhile the receiver script should output the received data:
 
 ```
 ############# MSG=SECRETMESSAGE
