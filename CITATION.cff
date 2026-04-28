@@ -9,7 +9,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-1913-5912"
 preferred-citation:
   type: conference-paper
-  title: "AdullamoT: Using IoT Devices as Relays for Time-decoupled Secret Exchange & Censorship Circumvention "
+  title: "AdullamoT: Using IoT Devices as Relays for Time-decoupled Secret Exchange & Censorship Circumvention"
   authors:
     - family-names: "Wendzel"
       given-names: "Steffen"
