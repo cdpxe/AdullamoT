@@ -11,6 +11,10 @@ Note that there is a [list of all my covert channel tools](https://github.com/cd
 
 The code was tested under Linux (Debian and Ubuntu). The following packages are necessary to run the scripts: `urlencode` (part of the `gridsite-clients` package), `curl`,  `nc` plus standard tools (`openssl`, `bash`, `sed`, `awk` etc.).
 
+## Notes on Covert Channel Amplification
+
+While not part of the paper, the use of a time-decoupled exchange can be improved using covert channel *amplification*. I wrote a blog post to summarize some background information on [covert channel amplification (and history covert channels)](https://www.wendzel.de/misc/2026/02/28/history-cc.html).
+
 ## How-to
 
 In general, one uses the `xxx_send.sh` script to send secret data to an IoT device, and the `xxx_recv.sh` script to retrieve the data.
