@@ -15,6 +15,8 @@ The code was tested under Linux (Debian and Ubuntu). The following packages are 
 
 While not part of the paper, the use of a time-decoupled exchange can be improved using covert channel *amplification*. I wrote a blog post to summarize some background information on [covert channel amplification (and history covert channels)](https://www.wendzel.de/misc/2026/02/28/history-cc.html).
 
+**Electronic Supplement: S. Wendzel: *[A Note on Covert Channel Amplification for Time-decoupled Secret Message Exchanges](https://doi.org/10.5281/zenodo.20681637)*, 2026.**
+
 ## How-to
 
 In general, one uses the `xxx_send.sh` script to send secret data to an IoT device, and the `xxx_recv.sh` script to retrieve the data.
