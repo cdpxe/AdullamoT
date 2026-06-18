@@ -2,7 +2,7 @@
 
 This repository features the AdullamoT proof of concept code. It belongs to the following paper:
 
-| [Steffen Wendzel](https://www.wendzel.de): *AdullamoT: Using IoT Devices as Relays for Time-decoupled Secret Exchange & Censorship Circumvention*, in Proc. 14th ACM Workshop on Information Hiding and Multimedia Security (ACM IH&MMSec 2026), Florence, Italy, June 17-19, in press. **[Pre-print (PDF)](https://wendzel.de/dr.org/files/Papers/AdullamoT.pdf)** |
+| [Steffen Wendzel](https://www.wendzel.de): *AdullamoT: Using IoT Devices as Relays for Time-decoupled Secret Exchange & Censorship Circumvention*, in Proc. 14th ACM Workshop on Information Hiding and Multimedia Security (ACM IH&MMSec 2026), Florence, Italy, June 17-19, in press. **[Download (PDF)](https://wendzel.de/dr.org/files/Papers/AdullamoT.pdf)** |
 |----|
 
 Note that there is a [list of all my covert channel tools](https://github.com/cdpxe/NetworkCovertChannels/blob/master/README.md).
